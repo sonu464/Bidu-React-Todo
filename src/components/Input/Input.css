@@ -1,0 +1,67 @@
+.container {
+  width: 50%;
+  padding: 0px 14px;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  background-color: #9292ff;
+  border-radius: 23px;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0px;
+  box-shadow: 0px 0px 18px 0px #9fb5f1;
+}
+
+.container label {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  text-align: left;
+  width: 100%;
+  padding-left: 40px;
+  display: none;
+}
+
+.container.invalid label {
+  color: red;
+  display: block;
+}
+.container.invalid input {
+  border-color: red;
+}
+
+.container input {
+  border: 1px solid white;
+  padding: 10px 10px;
+  width: 87%;
+  border-radius: 5px;
+  margin-bottom: 18px;
+  font-size: 18px;
+}
+
+.goal-btn {
+  border: none;
+  padding: 13px 25px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #464679;
+  color: #c4d0ff;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: scale 0.3s;
+}
+
+.goal-btn:hover {
+  scale: 1.02;
+  color: white;
+}
+
+.goal-btn:focus {
+  border: none;
+  outline: none;
+}
+
+.container input.invalid {
+  color: red;
+}
